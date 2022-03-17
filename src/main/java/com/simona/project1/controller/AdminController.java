@@ -5,10 +5,7 @@ import com.simona.project1.model.Order;
 import com.simona.project1.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,7 +18,8 @@ public class AdminController {
         this.admActions = admActions;
     }
 
-    public void addProduct(Product product){
+    @PostMapping(path="/addProduct")
+    public void addProduct(@RequestBody Product product){
         admActions.addProduct(product);
     }
 
@@ -74,6 +72,7 @@ public class AdminController {
     public @ResponseBody List<Product> getAllAvailableProducts(){
         return admActions.getAllAvailableProducts();
     }
+
 
     public void addOrder(int id_product, int quantity, Client client){
         admActions.addOrder(id_product,quantity,client);
