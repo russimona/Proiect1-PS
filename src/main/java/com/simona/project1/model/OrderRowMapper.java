@@ -5,8 +5,16 @@ import org.springframework.jdbc.core.RowMapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+
 public class OrderRowMapper implements RowMapper {
     @Override
+    /**
+     * Mapeaza clasa order pe tabelul din baza de date cu acelasi nume
+     * @param rs
+     * @param rowNum
+     * @return
+     * @throws SQLException
+     */
     public Order mapRow(ResultSet rs, int rowNum) throws SQLException {
         Order order = new Order(); // Obj of User, and mapping DB elements.
         order.setId_order(rs.getInt("id_order"));

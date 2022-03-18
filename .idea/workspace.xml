@@ -32,11 +32,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
@@ -109,7 +113,8 @@
       <workItem from="1647499764799" duration="18093000" />
       <workItem from="1647529958721" duration="2513000" />
       <workItem from="1647532549487" duration="2109000" />
-      <workItem from="1647547602927" duration="776000" />
+      <workItem from="1647547602927" duration="2055000" />
+      <workItem from="1647587211580" duration="4825000" />
     </task>
     <servers />
   </component>

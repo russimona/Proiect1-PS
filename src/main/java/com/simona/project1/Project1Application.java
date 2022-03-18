@@ -1,13 +1,16 @@
 package com.simona.project1;
 
 import com.simona.project1.controller.*;
-import com.simona.project1.controller.IUserService;
+import com.simona.project1.service.AdminService;
+import com.simona.project1.service.IAdminService;
+import com.simona.project1.service.IUserService;
 import com.simona.project1.dao.ClientRepository;
 import com.simona.project1.dao.OrderRepository;
 import com.simona.project1.dao.ProductRepository;
 import com.simona.project1.model.Client;
 import com.simona.project1.model.Order;
 import com.simona.project1.model.Product;
+import com.simona.project1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -44,7 +47,6 @@ public class Project1Application implements CommandLineRunner {
         Product product4 = new Product("Cutie white royal", "Aranjament", 50, 250);
         Product product5 = new Product("Aranjament Chic gift", "Aranjament", 50, 245);
         Product product6 = new Product("Trandafir alb", "Floare", 50, 15);
-
 
         admin.addProduct(product1);
         admin.addProduct(product2);

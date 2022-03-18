@@ -6,6 +6,13 @@ import java.sql.SQLException;
 
 public class ProductRowMapper implements RowMapper {
 
+    /**
+     * Mapeaza clasa Product pe tabela cu acelasi nume
+     * @param rs
+     * @param rowNum
+     * @return
+     * @throws SQLException
+     */
     @Override
     public Product mapRow(ResultSet rs, int rowNum) throws SQLException {
         Product product = new Product(); // Obj of User, and mapping DB elements.

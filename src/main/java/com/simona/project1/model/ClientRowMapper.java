@@ -8,6 +8,13 @@ import java.sql.SQLException;
 
 public class ClientRowMapper implements RowMapper {
 
+    /**
+     * Mapeaza clasa client pe tabelul din baza de date cu acelasi nume
+     * @param rs
+     * @param rowNum
+     * @return
+     * @throws SQLException
+     */
     @Override
     public Client mapRow(ResultSet rs, int rowNum) throws SQLException {
         Client client = new Client(); // Obj of User, and mapping DB elements.
