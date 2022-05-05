@@ -21,7 +21,7 @@ public class OrderRowMapper implements RowMapper {
         order.setTotal_price(rs.getDouble("total_price"));
         order.setOrder_number(rs.getInt("order_number"));
         order.setId_product(rs.getInt("id_product"));
-        order.setId_client(rs.getInt("id_client"));
+        order.setEmail_client(rs.getString("email_client"));
         return order;
     }
 }

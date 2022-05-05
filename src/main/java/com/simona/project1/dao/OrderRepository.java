@@ -25,7 +25,7 @@ public class OrderRepository {
     }
 
     public List<Order> getOrder() {
-        return jdbcTemplate.query("select id_order, total_price , order_number, id_product, id_client  from projectps.order", new OrderRowMapper());
+        return jdbcTemplate.query("select id_order, total_price , order_number, id_product, email_client  from projectps.order", new OrderRowMapper());
     }
 
     public Order findById(Integer id) {
@@ -48,7 +48,7 @@ public class OrderRepository {
                 ps.setDouble(2, order.getTotal_price());
                 ps.setInt(3,order.getOrder_number());
                 ps.setInt(4,order.getId_product());
-                ps.setInt(5,order.getId_client());
+                ps.setString(5,order.getEmail_client());
                 return ps.execute();
             }
         });
@@ -56,8 +56,8 @@ public class OrderRepository {
     }
 
     public Integer updateOrder( Order order){
-        String query="update projectps.order set total_price = ? , order_number = ? , id_prodct = ? , id_client = ?  where id_order = ?";
-        Object[] params = { order.getTotal_price(), order.getOrder_number(), order.getId_product(),  order.getId_client(), order.getId_order()};
+        String query="update projectps.order set total_price = ? , order_number = ? , id_prodct = ? , email_client = ?  where id_order = ?";
+        Object[] params = { order.getTotal_price(), order.getOrder_number(), order.getId_product(),  order.getEmail_client(), order.getId_order()};
         int[] types = {Types.INTEGER, Types.INTEGER, Types.INTEGER, Types.INTEGER,Types.INTEGER};
 
         return jdbcTemplate.update(query, params, types);

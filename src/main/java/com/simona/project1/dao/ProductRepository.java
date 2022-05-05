@@ -8,8 +8,6 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCallback;
 import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.*;
-
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Types;
@@ -23,9 +21,6 @@ public class ProductRepository {
     public ProductRepository(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
-
-
-
     public List<Product> getProducts() {
         return jdbcTemplate.query("select id_product,name,price,stoc , category  from projectps.product", new ProductRowMapper());
     }

@@ -4,7 +4,78 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37a43a00-2a2e-4c50-9468-d070fe8c89a2" name="Changes" comment="" />
+    <list default="true" id="37a43a00-2a2e-4c50-9468-d070fe8c89a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/dao/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/user/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/user/AdminRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/user/BasicUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/user/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/user/ClientRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/user/UserFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/user/Vizitator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/user/VizitatorRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/com/simona/project1/dao/ProductRepository.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/com/simona/project1/dao/ProductRepository.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/com/simona/project1/dao/class-use/ProductRepository.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/com/simona/project1/dao/class-use/ProductRepository.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/com/simona/project1/dao/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/com/simona/project1/dao/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/com/simona/project1/dao/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/com/simona/project1/dao/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/com/simona/project1/dao/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/com/simona/project1/dao/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/element-list" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/element-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/member-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/package-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/package-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDOC/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDOC/type-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/Project1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/Project1Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/controller/AdminService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/controller/IAdminService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/controller/IUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/controller/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/dao/ClientRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/dao/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/dao/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/dao/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/dao/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/ClientRowMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/OrderRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/OrderRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/service/IAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/service/IAdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/simona/project1/Project1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/simona/project1/Project1ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/Project1Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/Project1Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/controller/AdminService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/controller/IAdminService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/controller/IUserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/controller/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/ClientRepository$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/ClientRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/OrderRepository$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/OrderRepository$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/OrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/ProductRepository$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/ProductRepository$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/model/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/model/ClientRowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/model/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/model/OrderRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/model/OrderRowMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/model/ProductRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/model/ProductRowMapper.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +120,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="25xYGDDMuNROmmsN3ZubpmOyqgb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -61,8 +134,9 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo/demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FactoryDemo" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -70,7 +144,7 @@
       <recent name="com.simona.project1.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Project1Application">
+  <component name="RunManager" selected="JUnit.Project1ApplicationTests.contextLoads">
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.simona.project1.MainApp" />
       <module name="Project1" />
@@ -84,6 +158,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Project1ApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simona.project1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.simona.project1" />
+      <option name="MAIN_CLASS_NAME" value="com.simona.project1.Project1ApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Project1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Project1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.simona.project1.Project1Application" />
@@ -93,6 +186,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Project1ApplicationTests.contextLoads" />
+        <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="Application.MainApp" />
       </list>
     </recent_temporary>
@@ -115,21 +210,25 @@
       <workItem from="1647532549487" duration="2109000" />
       <workItem from="1647547602927" duration="2055000" />
       <workItem from="1647587211580" duration="4825000" />
+      <workItem from="1651339830407" duration="5812000" />
+      <workItem from="1651514515450" duration="5292000" />
+      <workItem from="1651759420473" duration="9142000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.IllegalStateException" package="java.lang" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Project1$Project1Application.ic" NAME="Project1Application Coverage Results" MODIFIED="1647521968128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

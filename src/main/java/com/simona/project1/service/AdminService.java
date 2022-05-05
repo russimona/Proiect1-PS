@@ -1,13 +1,12 @@
 package com.simona.project1.service;
 
-import com.simona.project1.dao.ClientRepository;
+import com.simona.project1.dao.UserRepository;
 import com.simona.project1.dao.OrderRepository;
 import com.simona.project1.dao.ProductRepository;
-import com.simona.project1.model.Client;
 import com.simona.project1.model.Order;
 import com.simona.project1.model.Product;
+import com.simona.project1.model.user.Client;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,15 +14,15 @@ import java.util.List;
 public class AdminService implements IAdminService {
 
     private IUserService userService;
-    private ClientRepository clientRepository;
+    private UserRepository userRepository;
     private ProductRepository productRepository;
     private  OrderRepository orderRepository;
 
-    public AdminService(IUserService userService, ClientRepository clientRepository, ProductRepository productRepository, OrderRepository orderRepository){
+    public AdminService(IUserService userService, UserRepository userRepository, ProductRepository productRepository, OrderRepository orderRepository){
         this.userService = userService;
         this.productRepository = productRepository;
         this.orderRepository = orderRepository;
-        this.clientRepository = clientRepository;
+        this.userRepository = userRepository;
     }
 
     /**
@@ -34,7 +33,7 @@ public class AdminService implements IAdminService {
      * @param product
      */
     @Override
-    public void addProduct(Product product) {
+    public Product addProduct(Product product) {
         int maxId;
         if(productRepository.getProducts().isEmpty()){
             maxId = 1;
@@ -49,6 +48,7 @@ public class AdminService implements IAdminService {
         }else{
             productRepository.updateProduct(product);
         }
+        return product;
     }
 
     /**
@@ -69,14 +69,6 @@ public class AdminService implements IAdminService {
         orderRepository.deleteOrderById(id);
     }
 
-    /**
-     * cauta clientul dupa id si il sterge
-     * @param id
-     */
-    @Override
-    public void deleteClient(Integer id) {
-        clientRepository.deleteClientById(id);
-    }
 
     /**
      * Returneaza o lista cu toate comenzile
@@ -106,14 +98,16 @@ public class AdminService implements IAdminService {
         return rez;
     }
 
-    /**
+   /**
      * Returneaza o lista cu toti clientii
      * @return
      */
     @Override
     public List<Client> getAllClients() {
-        return clientRepository.getClient();
+        return userRepository.getClients();
     }
+
+
 
     /**
      * Filtreaza lista cu produse si le returneaza doar pe cele a caror categorie este cea pe care o dam ca parametru
@@ -158,11 +152,11 @@ public class AdminService implements IAdminService {
      * Adauga o comanda pentru produsul a carui id il dam ca parametru cu id-ul clientului pe care il dam ca parametru
      * @param id_product
      * @param quantity
-     * @param client
+     * @param user
      */
     @Override
-    public void addOrder(int id_product, int quantity, Client client) {
-        userService.addOrder(id_product, quantity, client);
+    public Order addOrder(int id_product, int quantity, Client user) {
+        return userService.addOrder(id_product, quantity, user);
     }
 
     /**
@@ -182,5 +176,10 @@ public class AdminService implements IAdminService {
     @Override
     public Product getProductById(int id) {
         return productRepository.findById(id);
+    }
+
+    @Override
+    public void deleteClient(String email) {
+        userRepository.deleteUserByEmail(email);
     }
 }

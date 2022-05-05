@@ -1,7 +1,8 @@
 package com.simona.project1.service;
 
-import com.simona.project1.model.Client;
+import com.simona.project1.model.Order;
 import com.simona.project1.model.Product;
+import com.simona.project1.model.user.Client;
 
 import java.util.List;
 
@@ -38,13 +39,19 @@ public interface IUserService {
      * @param id_product
      * @param quantity
      * @param client
+     * @return
      */
-    void addOrder(int id_product, int quantity, Client client);
+    Order addOrder(int id_product, int quantity, Client client);
 
     /**
      * Cauta comanda a carui id il dam ca si parametru si o sterge
      * @param id_product
      */
     void deleteOrder(int id_product);
+
+    boolean login(String username, String password);
+    void deleteAccount(String username);
+
+    void signup(Client client);
 
 }

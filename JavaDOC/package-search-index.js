@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.simona.project1"},{"l":"com.simona.project1.controller"},{"l":"com.simona.project1.dao"},{"l":"com.simona.project1.model"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.simona.project1.dao"}];updateSearchResults();

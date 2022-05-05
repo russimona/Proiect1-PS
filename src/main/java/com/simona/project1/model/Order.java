@@ -1,8 +1,6 @@
 package com.simona.project1.model;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.util.List;
 
 @Entity
 public class Order {
@@ -11,7 +9,7 @@ public class Order {
     private Double total_price;
     private Integer order_number;
     private Integer id_product;
-    private Integer id_client;
+    private String email_client;
 
     public Order() {
     }
@@ -21,14 +19,14 @@ public class Order {
      * @param total_price
      * @param order_number
      * @param id_product
-     * @param id_client
+     * @param email_client
      */
-    public Order( Double total_price, Integer order_number, Integer id_product, Integer id_client) {
+    public Order( Double total_price, Integer order_number, Integer id_product, String email_client) {
 
         this.total_price = total_price;
         this.order_number = order_number;
         this.id_product = id_product;
-        this.id_client = id_client;
+        this.email_client = email_client;
     }
 
     /**
@@ -37,14 +35,14 @@ public class Order {
      * @param total_price
      * @param order_number
      * @param id_product
-     * @param id_client
+     * @param email_client
      */
-    public Order( Integer id, Double total_price, Integer order_number, Integer id_product, Integer id_client) {
+    public Order( Integer id, Double total_price, Integer order_number, Integer id_product, String email_client) {
         this.id_order = id;
         this.total_price = total_price;
         this.order_number = order_number;
         this.id_product = id_product;
-        this.id_client = id_client;
+        this.email_client = email_client;
     }
 
 
@@ -112,19 +110,11 @@ public class Order {
         this.id_product = id_product;
     }
 
-    /**
-     * get id client
-     * @return
-     */
-    public Integer getId_client() {
-        return id_client;
+    public String getEmail_client() {
+        return email_client;
     }
 
-    /**
-     * set id client
-     * @param id_client
-     */
-    public void setId_client(Integer id_client) {
-        this.id_client = id_client;
+    public void setEmail_client(String email_client) {
+        this.email_client = email_client;
     }
 }

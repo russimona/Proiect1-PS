@@ -1,15 +1,12 @@
 package com.simona.project1.service;
-
-import com.simona.project1.dao.ClientRepository;
+import com.simona.project1.dao.UserRepository;
 import com.simona.project1.dao.OrderRepository;
 import com.simona.project1.dao.ProductRepository;
-import com.simona.project1.model.Client;
 import com.simona.project1.model.Order;
 import com.simona.project1.model.Product;
-import com.simona.project1.service.IUserService;
+import com.simona.project1.model.user.Client;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,9 +15,9 @@ import java.util.List;
 public class UserService implements IUserService {
     private ProductRepository productRepository;
     private OrderRepository orderRepository;
-    private ClientRepository clientRepository;
+    private UserRepository clientRepository;
 
-    public UserService(ProductRepository productRepository, OrderRepository orderRepository, ClientRepository clientRepository){
+    public UserService(ProductRepository productRepository, OrderRepository orderRepository, UserRepository clientRepository){
         this.productRepository = productRepository;
         this.orderRepository = orderRepository;
         this.clientRepository = clientRepository;
@@ -82,6 +79,7 @@ public class UserService implements IUserService {
         return productRepository.getProductsAvailable();
     }
 
+
     /**
      * Adauga o comanda pentru produsul a carui id il dam ca parametru cu id-ul clientului pe care il dam ca parametru
      * Prima data se genereaza un orger id si un order number (daca lista de order este empty se incepe cu 1, in caz contrar
@@ -90,9 +88,10 @@ public class UserService implements IUserService {
      * @param id_product
      * @param quantity
      * @param client
-     */
+     * @return */
+
     @Override
-    public void addOrder(int id_product, int quantity, Client  client) {
+    public Order addOrder(int id_product, int quantity, Client client) {
         Product product = productRepository.findById(id_product);
         if(product != null && product.getStoc()-quantity>=0){
 
@@ -111,26 +110,50 @@ public class UserService implements IUserService {
                 maxId = orderRepository.findMaxId()+ 1;
             }
 
-            Client verify = clientRepository.findByNameEmailPhone(client.getName(), client.getEmail(), client.getPhone_number());
+            Client verify = clientRepository.findByNameEmailPhone(client.getEmail());
             if(verify == null){
                 clientRepository.saveClient(client);
             }
             product.setStoc(product.getStoc()-quantity);
             System.out.println(product.getStoc());
             productRepository.updateProduct(product);
-            Order order = new Order(maxId, price*quantity, ord_number,id_product,client.getId_client());
+            Order order = new Order(maxId, price*quantity, ord_number,id_product,client.getEmail());
             orderRepository.saveOrder(order);
-        }
 
+            return order;
+        }
+        return null;
     }
 
     /**
      * Cauta comanda a carui id il dam ca si parametru si o sterge
-     * @param id_product
+     * @param id_order
      */
     @Override
     public void deleteOrder(int id_order) {
         orderRepository.deleteOrderById(id_order);
+    }
+
+    /**
+     * Cauta in tabela client daca exista deja logat un client cu credentialele caz in care va returna true, altfel
+     * se va returna false (fie sunt gresite credentialele fie nu se gaseste un client stocat in db)
+     * @param username
+     * @param password
+     * @return
+     */
+    @Override
+    public boolean login(String username, String password) {
+        return clientRepository.login(username, password);
+    }
+
+    @Override
+    public void deleteAccount(String username) {
+        clientRepository.deleteUserByEmail(username);
+    }
+
+    @Override
+    public void signup(Client client) {
+        clientRepository.saveClient(client);
     }
 
 }

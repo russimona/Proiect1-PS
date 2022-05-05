@@ -1,8 +1,8 @@
 package com.simona.project1.service;
 
-import com.simona.project1.model.Client;
 import com.simona.project1.model.Order;
 import com.simona.project1.model.Product;
+import com.simona.project1.model.user.Client;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ public interface IAdminService {
      * Daca produsul exista deja se va updata la noile valori, altfel va fi adaugat ca produs nou
      * @param product
      */
-    void addProduct(Product product);
+    Product addProduct(Product product);
 
     /**
      * Cauta produsul dupa id si il sterge
@@ -25,12 +25,6 @@ public interface IAdminService {
      * @param id
      */
     void deleteOrder(Integer id);
-
-    /**
-     * cauta clientul dupa id si il sterge
-     * @param id
-     */
-    void deleteClient(Integer id);
 
     /**
      * Returneaza o lista cu toate comenzile
@@ -84,9 +78,9 @@ public interface IAdminService {
      * Adauga o comanda pentru produsul a carui id il dam ca parametru cu id-ul clientului pe care il dam ca parametru
      * @param id_product
      * @param quantity
-     * @param client
+     * @param user
      */
-    void addOrder(int id_product, int quantity,Client client);
+    Order addOrder(int id_product, int quantity, Client user);
 
     /**
      * cauta comanda a carui id il primeste ca parametru si il sterge
@@ -99,6 +93,8 @@ public interface IAdminService {
      * @param id
      * @return
      */
-    public Product getProductById(int id);
+    Product getProductById(int id);
+
+    void deleteClient(String username);
 
 }
