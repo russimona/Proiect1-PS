@@ -7,6 +7,8 @@ IServiceAdmin sunt toate metodele la care are acces adminul, atat cele din IServ
 specifice acestui tip de utilizator, implementate in IProdDetails.
 Operatiile CRUD sunt implementate in clasele Repository (operatiile de baza de care ne folosim in implementarile interfetelor).
 
+TEMA 2 Am integrat factory pattern in proiect anume pentru user. pentru a adauga un user se alege client/admin pentru a se insera in tabela tipul de user potrivit. In adminController sunt toate metodele care se pot folosi pentru admin anume : returneaza toate produsele/ comenzile/ clientii, filtreaza produsele available, filtreaza orders dupa min si max price, returneaza produsele dupa categorie, sterge produsul dupa id si userul dupa email. Pentru user, toate functionalitatie se afla in userController si metodele implementate sunt : returneaza toat produsele, produsele filtrate dupa categorie, produsele disponibile, adauga comanda, sterge comanda, se poate loga si se poate autentifica. (login si signup.
+
 
 Endpoints : 
   Pentru partea de administratie : 
