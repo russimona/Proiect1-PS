@@ -9,24 +9,45 @@ Operatiile CRUD sunt implementate in clasele Repository (operatiile de baza de c
 
 
 Endpoints : 
-  Pentru partea de administratie : http://localhost:8080/admin/products : afiseaza toate produsele
-                                   http://localhost:8080/admin/products/{id} : afiseaza produsul cu id-ul id (GET)
-                                   http://localhost:8080/admin/products/{id} : sterge produsul cu id-ul id (DELETE)
-                                   http://localhost:8080/admin/products/products_available : afiseaza toate produsele care se afla pe stoc
-                                   http://localhost:8080/admin/products/{minPrice}/{maxPrice} : afiseaza toate produsele in range-ul de pret [minPrice, maxPrice]
-                                   http://localhost:8080/admin/products/{categorie} : afiseaza toate produsele din categoria categorie
-                                   http://localhost:8080/admin/users : afiseaza toti clientii
-                                   http://localhost:8080/admin/users/{email} : afiseaza toti clientii tu email-ul email
-                                   http://localhost:8080/admin/orders : afiseaza toate comenzile 
-                                   http://localhost:8080/admin/orders/{id} : afiseaza comanda cu id-ul id
-                                   http://localhost:8080/admin/orders/{minPrice}/{maxPrice} : afiseaza toate comenzile in range-ul de pret [minPrice, maxPrice]
-                                   http://localhost:8080/admin/orders/{id} : sterge comanda cu id-ul id (DELETE)
-Pentru partea de user : http://localhost:8080/user/orders/products : afiseaza toate produsele
-                        http://localhost:8080/user/orders/products_available : afiseaza toate produsele care se afla pe stoc
-                        http://localhost:8080/user/products/{categorie} : afiseaza toate produsele din categoria categorie
-                        http://localhost:8080/user/orders/{id_product}/{quantity} : adauga o comanda cu produsul al caurui id este id_product cu cantitatea quantity
-                        http://localhost:8080/user/products/{minPrice}/{maxPrice} : afiseaza toate produsele in range-ul de pret [minPrice, maxPrice]
-                        http://localhost:8080/user/orders/{id} : sterge comanda cu id-ul id (DELETE)
+  Pentru partea de administratie : 
+ 
+http://localhost:8080/admin/products : afiseaza toate produsele
+
+http://localhost:8080/admin/products/{id} : afiseaza produsul cu id-ul id (GET)
+
+http://localhost:8080/admin/products/{id} : sterge produsul cu id-ul id (DELETE)
+
+http://localhost:8080/admin/products/products_available : afiseaza toate produsele care se afla pe stoc
+
+http://localhost:8080/admin/products/{minPrice}/{maxPrice} : afiseaza toate produsele in range-ul de pret [minPrice, maxPrice]
+
+http://localhost:8080/admin/products/{categorie} : afiseaza toate produsele din categoria categorie
+
+http://localhost:8080/admin/users : afiseaza toti clientii
+
+http://localhost:8080/admin/users/{email} : afiseaza toti clientii tu email-ul email
+
+http://localhost:8080/admin/orders : afiseaza toate comenzile 
+
+http://localhost:8080/admin/orders/{id} : afiseaza comanda cu id-ul id
+
+http://localhost:8080/admin/orders/{minPrice}/{maxPrice} : afiseaza toate comenzile in range-ul de pret [minPrice, maxPrice]
+
+http://localhost:8080/admin/orders/{id} : sterge comanda cu id-ul id (DELETE)
+
+Pentru partea de user : 
+
+http://localhost:8080/user/orders/products : afiseaza toate produsele
+
+http://localhost:8080/user/orders/products_available : afiseaza toate produsele care se afla pe stoc
+
+http://localhost:8080/user/products/{categorie} : afiseaza toate produsele din categoria categorie
+
+http://localhost:8080/user/orders/{id_product}/{quantity} : adauga o comanda cu produsul al caurui id este id_product cu cantitatea quantity
+
+http://localhost:8080/user/products/{minPrice}/{maxPrice} : afiseaza toate produsele in range-ul de pret [minPrice, maxPrice]
+
+http://localhost:8080/user/orders/{id} : sterge comanda cu id-ul id (DELETE)
                         
 Toate endpoint-urile au 4 metode implementate: GET, POST, PUT, DELETE
 
