@@ -19,13 +19,13 @@ import java.util.List;
 @Controller
 @RequestMapping(path="user")
 public class UserController {
-    @Autowired
     private IUserService userActions;
 
     public UserController(){
 
     }
 
+    @Autowired
     public UserController(ProductRepository productRepository, OrderRepository orderRepository, UserRepository clientRepository) {
         userActions = new UserService(productRepository, orderRepository, clientRepository);
     }

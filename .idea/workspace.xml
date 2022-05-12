@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37a43a00-2a2e-4c50-9468-d070fe8c89a2" name="Changes" comment="" />
+    <list default="true" id="37a43a00-2a2e-4c50-9468-d070fe8c89a2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj.png" beforeDir="false" afterPath="$PROJECT_DIR$/proj.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/Project1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/Project1Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/dao/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/dao/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/dao/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/dao/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/dao/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/dao/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/user/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/model/user/UserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/service/IAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/service/IAdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simona/project1/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simona/project1/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/simona/project1/Project1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/simona/project1/Project1ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/Project1Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/Project1Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/OrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/UserRepository$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/UserRepository$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/dao/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/model/user/UserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/model/user/UserFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/service/IAdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/service/IAdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/simona/project1/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/simona/project1/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/simona/project1/Project1ApplicationTests.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +68,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -73,24 +100,8 @@
       <recent name="com.simona.project1.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Project1ApplicationTests.contextLoads">
-    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.simona.project1.MainApp" />
-      <module name="Project1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.simona.project1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="Project1ApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AdminControllerTest.getAllProductsAvailableTestSuccess">
+    <configuration name="AdminControllerTest.getAllClientTestSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project1" />
       <extension name="coverage">
         <pattern>
@@ -99,8 +110,72 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.simona.project1" />
-      <option name="MAIN_CLASS_NAME" value="com.simona.project1.Project1ApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="MAIN_CLASS_NAME" value="com.simona.project1.AdminControllerTest" />
+      <option name="METHOD_NAME" value="getAllClientTestSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminControllerTest.getAllOrdersTestSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simona.project1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.simona.project1" />
+      <option name="MAIN_CLASS_NAME" value="com.simona.project1.AdminControllerTest" />
+      <option name="METHOD_NAME" value="getAllOrdersTestSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminControllerTest.getAllProductsAvailableTestSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simona.project1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.simona.project1" />
+      <option name="MAIN_CLASS_NAME" value="com.simona.project1.AdminControllerTest" />
+      <option name="METHOD_NAME" value="getAllProductsAvailableTestSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.getAllProductsAvailableTestSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simona.project1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.simona.project1" />
+      <option name="MAIN_CLASS_NAME" value="com.simona.project1.UserControllerTest" />
+      <option name="METHOD_NAME" value="getAllProductsAvailableTestSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.getAllProductsTestSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simona.project1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.simona.project1" />
+      <option name="MAIN_CLASS_NAME" value="com.simona.project1.UserControllerTest" />
+      <option name="METHOD_NAME" value="getAllProductsTestSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,9 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Project1ApplicationTests.contextLoads" />
-        <item itemvalue="HTTP Request.generated-requests | #1" />
-        <item itemvalue="Application.MainApp" />
+        <item itemvalue="JUnit.AdminControllerTest.getAllProductsAvailableTestSuccess" />
+        <item itemvalue="JUnit.UserControllerTest.getAllProductsTestSuccess" />
+        <item itemvalue="JUnit.UserControllerTest.getAllProductsAvailableTestSuccess" />
+        <item itemvalue="JUnit.AdminControllerTest.getAllClientTestSuccess" />
+        <item itemvalue="JUnit.AdminControllerTest.getAllOrdersTestSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +218,9 @@
       <workItem from="1647587211580" duration="4825000" />
       <workItem from="1651339830407" duration="5812000" />
       <workItem from="1651514515450" duration="5292000" />
-      <workItem from="1651759420473" duration="9768000" />
+      <workItem from="1651759420473" duration="11634000" />
+      <workItem from="1652352681359" duration="4852000" />
+      <workItem from="1652378656902" duration="5744000" />
     </task>
     <servers />
   </component>

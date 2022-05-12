@@ -17,9 +17,9 @@ import java.util.List;
 
 @Repository
 public class OrderRepository {
-    @Autowired
     private JdbcTemplate jdbcTemplate;
 
+    @Autowired
     public OrderRepository(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }

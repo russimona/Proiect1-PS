@@ -38,7 +38,7 @@ public class Project1Application implements CommandLineRunner {
         OrderRepository orderRepository = new OrderRepository(jdbcTemplate);
 
         IUserService prodDetails = new UserService(productRepository,orderRepository, clientRepository);
-        IAdminService admActions = new AdminService(prodDetails,clientRepository,productRepository,orderRepository);
+        AdminService admActions = new AdminService(prodDetails,clientRepository,productRepository,orderRepository);
 
         AdminController admin = new AdminController(admActions);
         UserController userController = new UserController(productRepository,orderRepository,clientRepository);

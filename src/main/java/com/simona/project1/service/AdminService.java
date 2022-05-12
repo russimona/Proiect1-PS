@@ -6,6 +6,7 @@ import com.simona.project1.dao.ProductRepository;
 import com.simona.project1.model.Order;
 import com.simona.project1.model.Product;
 import com.simona.project1.model.user.Client;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +19,7 @@ public class AdminService implements IAdminService {
     private ProductRepository productRepository;
     private  OrderRepository orderRepository;
 
+    @Autowired
     public AdminService(IUserService userService, UserRepository userRepository, ProductRepository productRepository, OrderRepository orderRepository){
         this.userService = userService;
         this.productRepository = productRepository;

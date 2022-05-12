@@ -3,9 +3,11 @@ package com.simona.project1.service;
 import com.simona.project1.model.Order;
 import com.simona.project1.model.Product;
 import com.simona.project1.model.user.Client;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public interface IUserService {
     /**
      * Returneaza doar produsele din categoria category data ca parametru

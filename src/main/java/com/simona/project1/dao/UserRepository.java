@@ -1,9 +1,5 @@
 package com.simona.project1.dao;
-
-import com.simona.project1.model.Order;
-import com.simona.project1.model.OrderRowMapper;
-import com.simona.project1.model.user.Client;
-import com.simona.project1.model.user.ClientRowMapper;
+import com.simona.project1.model.user.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -17,9 +13,9 @@ import java.util.stream.Collectors;
 
 @Repository
 public class UserRepository {
-    @Autowired
     private JdbcTemplate jdbcTemplate;
 
+    @Autowired
     public UserRepository(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
@@ -37,11 +33,10 @@ public class UserRepository {
 
 
     public boolean login(String username, String password){
-        List<Client> clients = jdbcTemplate.query("select name, email , phone_number, type, password  from projectps.user", new ClientRowMapper());
+        List<BasicUser> clients = jdbcTemplate.query("select name, email , phone_number, type, password  from projectps.user", new ClientRowMapper());
 
         if(clients == null) return false;
-        for(Client c : clients){
-            //System.out.println(c.getPassword()+" "+c.getEmail());
+        for(BasicUser c : clients){
             if(c.getPassword().equals(password) && c.getEmail().equals(username)){
                 return true;
             }
@@ -62,12 +57,16 @@ public class UserRepository {
 
     public  Client findByNameEmailPhone(String email) {
         String sql = "SELECT * FROM projectps.user WHERE email = ?";
+        UserFactory userFactory = new UserFactory();
+        BasicUser user = userFactory.createUser(UserTypeEnum.CLIENT);
         try{
-            return  (Client) this.jdbcTemplate.queryForObject(sql, new String[]{email}, new ClientRowMapper());
+             user =  (Client) this.jdbcTemplate.queryForObject(sql, new String[]{email}, new ClientRowMapper());
         }
         catch(EmptyResultDataAccessException ex){
             return null;
         }
+
+        return (Client)user;
     }
 
     public  Boolean saveClient( Client client){

@@ -1,7 +1,9 @@
 package com.simona.project1.controller;
+
 import com.simona.project1.model.Order;
 import com.simona.project1.model.Product;
 import com.simona.project1.model.user.Client;
+import com.simona.project1.service.AdminService;
 import com.simona.project1.service.IAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,10 +16,11 @@ import java.util.List;
 @Controller
 @RequestMapping(path = "admin")
 public class AdminController {
-    @Autowired
-    IAdminService admActions;
 
-    public AdminController(IAdminService admActions) {
+    AdminService admActions;
+
+    @Autowired
+    public AdminController(AdminService admActions) {
         this.admActions = admActions;
     }
 
@@ -27,12 +30,11 @@ public class AdminController {
      * @param product
      */
     @PostMapping(path = "/products")
-    public  ResponseEntity<Product> addProduct(@RequestBody Product product) {
+    public ResponseEntity<Product> addProduct(@RequestBody Product product) {
         Product newProducts = admActions.addProduct(product);
         if (newProducts != null) {
             return new ResponseEntity<>(newProducts, HttpStatus.CREATED);
-        }
-        else {
+        } else {
             return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
         }
     }
@@ -73,11 +75,11 @@ public class AdminController {
     }
 
     /**
-     * Returneaza toate comenzile
+     * Returneaza toti clientii
      *
      * @return
      */
-    @GetMapping(path = "/users") //orders
+    @GetMapping(path = "/users")
     public @ResponseBody
     List<Client> getAllClients() {
         return admActions.getAllClients();
