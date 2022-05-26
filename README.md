@@ -1,16 +1,50 @@
-# Proiect1-PS
-TEMA 1
-Proiectul pe care doresc sa il dezvolt este o aplicatie online prin intermediul careia se pot cumpara flori (florarie online). 
-Aplicatia contine o baza de date formata din 3 tabele(product, order, client).
-In cele 2 clase, UserController si AdminController avem toate actiunile pe care le pot face userii si adminul.
-In interfata IServiceUser sunt toate operatiile pe produse+orders care este implementata in ServiceUser, iar in interfata 
-IServiceAdmin sunt toate metodele la care are acces adminul, atat cele din IServiceUser (care sunt pentru clienti) cat si altele
-specifice acestui tip de utilizator, implementate in IProdDetails.
-Operatiile CRUD sunt implementate in clasele Repository (operatiile de baza de care ne folosim in implementarile interfetelor).
-Id urile se genereaza in functie de id-ul maxim existent in tabel la care se adauga 1. In cazul in care tabelul este empty se incepe cu id-ul 1.
-Pe aceeasi idee se genereaza si orderNumber.
+AndroidTrivia - final solution code
+===================================
 
+This app is the solution code for Android Kotlin Fundamentals codelab 3.3:
+Invoke an external activity.
 
-TEMA 2
-Am integrat factory pattern in proiect anume pentru user. pentru a adauga un user se alege client/admin  pentru a se insera in tabela tipul de user potrivit.
-In adminController sunt toate metodele care se pot folosi pentru admin anume : returneaza toate produsele/ comenzile/ clientii, filtreaza produsele available, filtreaza orders dupa min si max price, returneaza produsele dupa categorie, sterge produsul dupa id si userul dupa email. Pentru user, toate functionalitatie se afla in userController si metodele implementate sunt : returneaza toat produsele, produsele filtrate dupa categorie, produsele disponibile, adauga comanda, sterge comanda, se poate loga si se poate autentifica. (login si signup.
+Introduction
+------------
+ 
+The AndroidTrivia app asks the user trivia questions about Android development.
+It makes use of the navigation component within Jetpack to move the user between
+screens. Each screen is implemented as a fragment.
+
+The app navigates using buttons, the app bar, and a navigation drawer. Because
+students haven't yet learned about saving data or the Android lifecycle, the app
+tries to eliminate bugs caused by configuration changes.
+
+Prerequisites
+-------------
+
+You need to know:
+- The fundamentals of Kotlin.
+- How to create basic Android apps in Kotlin.
+- How to open, build, and run apps with Android Studio.
+- How to work with layouts.
+
+Getting started
+---------------
+
+1. Download and run the app.
+
+License
+-------
+
+Copyright 2019 Google, Inc.
+
+Licensed to the Apache Software Foundation (ASF) under one or more contributor
+license agreements.  See the NOTICE file distributed with this work for
+additional information regarding copyright ownership.  The ASF licenses this
+file to you under the Apache License, Version 2.0 (the "License"); you may not
+use this file except in compliance with the License.  You may obtain a copy of
+the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
+License for the specific language governing permissions and limitations under
+the License.

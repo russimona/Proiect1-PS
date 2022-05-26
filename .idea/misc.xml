@@ -1,23 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="JavadocGenerationManager">
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../Proiect1-PS/JavaDOC" />
-    <option name="OPTION_SCOPE" value="private" />
-    <option name="OPTION_DOCUMENT_TAG_USE" value="true" />
-    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="true" />
-    <option name="OPTION_DOCUMENT_TAG_VERSION" value="true" />
-  </component>
-  <component name="MavenProjectsManager">
-    <option name="originalFiles">
-      <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-      </list>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.163" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/drawable/ic_launcher_background.xml" value="0.163" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/drawable/nav_header.xml" value="0.163" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/layout/fragment_about.xml" value="0.176" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/layout/fragment_client_page.xml" value="0.1598731884057971" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/layout/fragment_game_over.xml" value="0.536" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/layout/fragment_log_in.xml" value="0.176" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/layout/fragment_main_page.xml" value="0.264" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/layout/fragment_my_profile.xml" value="0.25" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/layout/fragment_rules.xml" value="0.176" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/layout/fragment_sign_in.xml" value="0.22" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/layout/nav_header.xml" value="0.1598731884057971" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/menu/navdrawer_menu.xml" value="0.25" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/menu/options_menu.xml" value="0.25" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/menu/winner_menu.xml" value="0.25" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/MYPROJECT_TEMA3/AndroidTrivia/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/android-kotlin-fundamental-apps/android-kotlin-fundamentals-apps/AndroidTrivia/app/src/main/res/drawable/about_android_trivia.xml" value="0.1435" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/android-kotlin-fundamental-apps/android-kotlin-fundamentals-apps/AndroidTrivia/app/src/main/res/layout/activity_main.xml" value="0.15677083333333333" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/android-kotlin-fundamental-apps/android-kotlin-fundamentals-apps/AndroidTrivia/app/src/main/res/layout/fragment_about.xml" value="0.152" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/android-kotlin-fundamental-apps/android-kotlin-fundamentals-apps/AndroidTrivia/app/src/main/res/layout/fragment_client_page.xml" value="0.22554347826086957" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/android-kotlin-fundamental-apps/android-kotlin-fundamentals-apps/AndroidTrivia/app/src/main/res/layout/fragment_game.xml" value="0.152" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/android-kotlin-fundamental-apps/android-kotlin-fundamentals-apps/AndroidTrivia/app/src/main/res/layout/fragment_rules.xml" value="0.15677083333333333" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/android-kotlin-fundamental-apps/android-kotlin-fundamentals-apps/AndroidTrivia/app/src/main/res/layout/fragment_title.xml" value="0.17346014492753623" />
+        <entry key="..\:/UTCN_AC/An3/Sem2/PS/android-kotlin-fundamental-apps/android-kotlin-fundamentals-apps/AndroidTrivia/app/src/main/res/layout/nav_header.xml" value="0.176" />
+      </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
-    <option name="id" value="jpab" />
+    <option name="id" value="Android" />
   </component>
 </project>

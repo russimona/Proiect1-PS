@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainPage">
+
+    <fragment
+        android:id="@+id/mainPage"
+        android:name="com.example.android.navigation.MainPageFragment"
+        android:label="My garden"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/action_titleFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_mainPage_to_rulesFragment"
+            app:destination="@id/rulesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.android.navigation.LogInFragment"
+        android:label="Log in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_gameFragment_to_client_page_Fragment"
+            app:destination="@id/clientPage" />
+        <action
+            android:id="@+id/action_gameFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.example.android.navigation.SignInFragment"
+        android:label="Sign up"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_gameOverFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientPage"
+        android:name="com.example.android.navigation.ClientPageFragment"
+        android:label="Our plants"
+        tools:layout="@layout/fragment_client_page" >
+        <action
+            app:popUpTo="@+id/clientPageFragment"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_clientPage_to_mainPage"
+            app:destination="@id/mainPage" />
+        <action
+            android:id="@+id/action_clientPage_to_mainPage2"
+            app:destination="@id/mainPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.android.navigation.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.example.android.navigation.RulesFragment"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules" />
+
+</navigation>
