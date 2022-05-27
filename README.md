@@ -73,3 +73,45 @@ DATABASE DIAGRAM
 PROJECT DIAGRAM 
 
 ![proj](https://user-images.githubusercontent.com/72413699/168095559-876e3156-2a20-4ce0-b1db-b035ddfe043b.png)
+
+
+INTERGATA GRAFICA 
+
+Pentru interfata grafica avem 6 pagini conectate intre ele in felul urmator 
+
+![image](https://user-images.githubusercontent.com/72413699/170631311-18e07a25-7e1a-48a9-b498-de7485d52e73.png)
+
+Prima pagina, main page este pagina principala a aplicatiei. De pe aceasta pagina putem naviga in 3 alte locuri : pagina de log in (butonul de log in), pagina cu produsele disponibile (Butonul " What we offer?" ), pagina cu descrierea firmei (Butonul "Who are we? ").
+
+![image](https://user-images.githubusercontent.com/72413699/170631439-f1946e73-4db7-4e75-8447-92f3044d7097.png)
+
+Pagina About este una destul de straight forward, contine doar o mica descriere si nu se navigheaza nicaieri. 
+
+![image](https://user-images.githubusercontent.com/72413699/170631580-2df74336-e89c-4a9e-9c8d-4a93a6e08daf.png)
+
+Pagina cu produsele este la fel una destul de simpla, contine doar o insiruire a produselor disponibile si a pretului pe care il au. Pentru aseara pagina am folosit o get pentru a lua datele din db, am folosit api-ul constuit in backend si am primit ca raspuns la cererea facuta spre backend o lista de produse din care am procesat doar campul de name si price, punandu-le pe fiecare intr-o lista si afisandu-le pe ecran 
+
+![image](https://user-images.githubusercontent.com/72413699/170631794-4a673cd7-ee51-4c24-984e-5c8785a9ff6a.png)
+
+
+Pagina de log in este prima pagina putin mai complexa, contine 2 text field uri si 2 butoane. Aceasta pagina are rolul de a lua datele introduse de client si de a verifica daca in db exista un client inregistrat cu acele credentiale. Se face din nou un apel la backend cu api-ul construit si se primeste o lista de clienti. Se itereaza lista respectiva si in cazul in care am gasit un set de credentiale care sa se potriveasca, punem o variabila pe true si redirectionam la pagina clients 
+De asemenea, avem buton pentru sign in care redirectioneaza userul la o alta pagina pentru a se putea inregistra in aplicatie 
+
+![image](https://user-images.githubusercontent.com/72413699/170632020-d242c82e-1215-4e60-9314-075992d8c416.png)
+
+
+
+Pagina de sign in contine un form care trebuie completat de utilizator si datele se vor salva in baza de date. Se va crea un obiect cu datele trimise si avel obiect se la transmite prin metoda put, folosindu-ne de api-ul creat in backend pentru a ne lega frontend ul de back si de db. 
+
+![image](https://user-images.githubusercontent.com/72413699/170633237-1979b5f4-471d-40f9-9b95-6237b0b7c5f5.png)
+
+
+Pagina Clients page, momentan nu are nimic randat pe ea, in viitor aici ar trebui sa fie produsele disponibile, pretul lor si o optiune de a adauga in cos produsul, iar mai apoi finalizare cumparaturi. 
+![image](https://user-images.githubusercontent.com/72413699/170633368-3723ac2e-def1-4d1d-a5e1-55e01e80d3fd.png)
+
+
+De asemenea ca dezvoltari ulterioare, avand in vedere ca am mentionat de comenzile online, as considera necesar sa existe in database, fine inca un tabel si id-ul clientului si adresa lui + adresa la care sa se faca livrarea, fie sa se adauge aceste campuri in tabela user.
+
+O alta dezvoltare ulterioara: pagina de admin, ar trebui creata, ar trebui sa poata face modificari directe asupra db-ului, adaugari de prpoduse/ stergere de produse. updatari de produse etc. Ar trebui sa aiba acces si pe partea de client, sa stearga contul acestuia in cazuri exceptionale.
+De asemenea, un alt improvment ar fi ca si clientul sa poata sa lase review uri la produs si de ce nu, un anumit rating la fiecare in parte, asta facand mai interactiva pagina.
+
