@@ -1,50 +1,64 @@
-AndroidTrivia - final solution code
-===================================
+Proiect1-PS
+Proiectul pe care doresc sa il dezvolt este o aplicatie online prin intermediul careia se pot cumpara flori (florarie online). Aplicatia contine o baza de date formata din 3 tabele(product, order, client). In cele 2 clase, UserController si AdminController avem toate actiunile pe care le pot face userii si adminul. In interfata IServiceUser sunt toate operatiile pe produse+orders care este implementata in ServiceUser, iar in interfata IServiceAdmin sunt toate metodele la care are acces adminul, atat cele din IServiceUser (care sunt pentru clienti) cat si altele specifice acestui tip de utilizator, implementate in IProdDetails. Operatiile CRUD sunt implementate in clasele Repository (operatiile de baza de care ne folosim in implementarile interfetelor).
 
-This app is the solution code for Android Kotlin Fundamentals codelab 3.3:
-Invoke an external activity.
+TEMA 2 Am integrat factory pattern in proiect anume pentru user. pentru a adauga un user se alege client/admin pentru a se insera in tabela tipul de user potrivit. In adminController sunt toate metodele care se pot folosi pentru admin anume : returneaza toate produsele/ comenzile/ clientii, filtreaza produsele available, filtreaza orders dupa min si max price, returneaza produsele dupa categorie, sterge produsul dupa id si userul dupa email. Pentru user, toate functionalitatie se afla in userController si metodele implementate sunt : returneaza toat produsele, produsele filtrate dupa categorie, produsele disponibile, adauga comanda, sterge comanda, se poate loga si se poate autentifica. (login si signup.
 
-Introduction
-------------
- 
-The AndroidTrivia app asks the user trivia questions about Android development.
-It makes use of the navigation component within Jetpack to move the user between
-screens. Each screen is implemented as a fragment.
+Endpoints : Pentru partea de administratie :
 
-The app navigates using buttons, the app bar, and a navigation drawer. Because
-students haven't yet learned about saving data or the Android lifecycle, the app
-tries to eliminate bugs caused by configuration changes.
+http://localhost:8080/admin/products : afiseaza toate produsele
 
-Prerequisites
--------------
+http://localhost:8080/admin/products/{id} : afiseaza produsul cu id-ul id (GET)
 
-You need to know:
-- The fundamentals of Kotlin.
-- How to create basic Android apps in Kotlin.
-- How to open, build, and run apps with Android Studio.
-- How to work with layouts.
+http://localhost:8080/admin/products/{id} : sterge produsul cu id-ul id (DELETE)
 
-Getting started
----------------
+http://localhost:8080/admin/products/products_available : afiseaza toate produsele care se afla pe stoc
 
-1. Download and run the app.
+http://localhost:8080/admin/products/{minPrice}/{maxPrice} : afiseaza toate produsele in range-ul de pret [minPrice, maxPrice]
 
-License
--------
+http://localhost:8080/admin/products/{categorie} : afiseaza toate produsele din categoria categorie
 
-Copyright 2019 Google, Inc.
+http://localhost:8080/admin/users : afiseaza toti clientii
 
-Licensed to the Apache Software Foundation (ASF) under one or more contributor
-license agreements.  See the NOTICE file distributed with this work for
-additional information regarding copyright ownership.  The ASF licenses this
-file to you under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License.  You may obtain a copy of
-the License at
+http://localhost:8080/admin/users/{email} : afiseaza toti clientii tu email-ul email
 
-  http://www.apache.org/licenses/LICENSE-2.0
+http://localhost:8080/admin/orders : afiseaza toate comenzile
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-License for the specific language governing permissions and limitations under
-the License.
+http://localhost:8080/admin/orders/{id} : afiseaza comanda cu id-ul id
+
+http://localhost:8080/admin/orders/{minPrice}/{maxPrice} : afiseaza toate comenzile in range-ul de pret [minPrice, maxPrice]
+
+http://localhost:8080/admin/orders/{id} : sterge comanda cu id-ul id (DELETE)
+
+Pentru partea de user :
+
+http://localhost:8080/user/orders/products : afiseaza toate produsele
+
+http://localhost:8080/user/orders/products_available : afiseaza toate produsele care se afla pe stoc
+
+http://localhost:8080/user/products/{categorie} : afiseaza toate produsele din categoria categorie
+
+http://localhost:8080/user/orders/{id_product}/{quantity} : adauga o comanda cu produsul al caurui id este id_product cu cantitatea quantity
+
+http://localhost:8080/user/products/{minPrice}/{maxPrice} : afiseaza toate produsele in range-ul de pret [minPrice, maxPrice]
+
+http://localhost:8080/user/orders/{id} : sterge comanda cu id-ul id (DELETE)
+
+Toate endpoint-urile au 4 metode implementate: GET, POST, PUT, DELETE
+
+GET - returneaza toate entitățile din baza de date
+
+POST - inserează o entitate dacă toate detaliile date sunt corecte și returneaza 200 sau 400 dacă nu a fost efectuat cu succes
+
+PUT - actualizează o entitate dacă toate detaliile date sunt corecte și returneaza 200 sau 400 dacă nu a fost efectuat cu succes
+
+DELETE - șterge o entitate dacă toate detaliile date sunt corecte și returneaza 200 sau 400 dacă nu a fost efectuat cu succes
+
+flow
+
+DATABASE DIAGRAM
+
+DB
+
+PROJECT DIAGRAM
+
+proj
