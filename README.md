@@ -1,10 +1,18 @@
-Proiect1-PS
-Proiectul pe care doresc sa il dezvolt este o aplicatie online prin intermediul careia se pot cumpara flori (florarie online). Aplicatia contine o baza de date formata din 3 tabele(product, order, client). In cele 2 clase, UserController si AdminController avem toate actiunile pe care le pot face userii si adminul. In interfata IServiceUser sunt toate operatiile pe produse+orders care este implementata in ServiceUser, iar in interfata IServiceAdmin sunt toate metodele la care are acces adminul, atat cele din IServiceUser (care sunt pentru clienti) cat si altele specifice acestui tip de utilizator, implementate in IProdDetails. Operatiile CRUD sunt implementate in clasele Repository (operatiile de baza de care ne folosim in implementarile interfetelor).
+# Proiect1-PS
+Proiectul pe care doresc sa il dezvolt este o aplicatie online prin intermediul careia se pot cumpara flori (florarie online). 
+Aplicatia contine o baza de date formata din 3 tabele(product, order, client).
+In cele 2 clase, UserController si AdminController avem toate actiunile pe care le pot face userii si adminul.
+In interfata IServiceUser sunt toate operatiile pe produse+orders care este implementata in ServiceUser, iar in interfata 
+IServiceAdmin sunt toate metodele la care are acces adminul, atat cele din IServiceUser (care sunt pentru clienti) cat si altele
+specifice acestui tip de utilizator, implementate in IProdDetails.
+Operatiile CRUD sunt implementate in clasele Repository (operatiile de baza de care ne folosim in implementarile interfetelor).
 
 TEMA 2 Am integrat factory pattern in proiect anume pentru user. pentru a adauga un user se alege client/admin pentru a se insera in tabela tipul de user potrivit. In adminController sunt toate metodele care se pot folosi pentru admin anume : returneaza toate produsele/ comenzile/ clientii, filtreaza produsele available, filtreaza orders dupa min si max price, returneaza produsele dupa categorie, sterge produsul dupa id si userul dupa email. Pentru user, toate functionalitatie se afla in userController si metodele implementate sunt : returneaza toat produsele, produsele filtrate dupa categorie, produsele disponibile, adauga comanda, sterge comanda, se poate loga si se poate autentifica. (login si signup.
 
-Endpoints : Pentru partea de administratie :
 
+Endpoints : 
+  Pentru partea de administratie : 
+ 
 http://localhost:8080/admin/products : afiseaza toate produsele
 
 http://localhost:8080/admin/products/{id} : afiseaza produsul cu id-ul id (GET)
@@ -21,7 +29,7 @@ http://localhost:8080/admin/users : afiseaza toti clientii
 
 http://localhost:8080/admin/users/{email} : afiseaza toti clientii tu email-ul email
 
-http://localhost:8080/admin/orders : afiseaza toate comenzile
+http://localhost:8080/admin/orders : afiseaza toate comenzile 
 
 http://localhost:8080/admin/orders/{id} : afiseaza comanda cu id-ul id
 
@@ -29,7 +37,7 @@ http://localhost:8080/admin/orders/{minPrice}/{maxPrice} : afiseaza toate comenz
 
 http://localhost:8080/admin/orders/{id} : sterge comanda cu id-ul id (DELETE)
 
-Pentru partea de user :
+Pentru partea de user : 
 
 http://localhost:8080/user/orders/products : afiseaza toate produsele
 
@@ -42,23 +50,26 @@ http://localhost:8080/user/orders/{id_product}/{quantity} : adauga o comanda cu 
 http://localhost:8080/user/products/{minPrice}/{maxPrice} : afiseaza toate produsele in range-ul de pret [minPrice, maxPrice]
 
 http://localhost:8080/user/orders/{id} : sterge comanda cu id-ul id (DELETE)
-
+                        
 Toate endpoint-urile au 4 metode implementate: GET, POST, PUT, DELETE
 
 GET - returneaza toate entitățile din baza de date
 
-POST - inserează o entitate dacă toate detaliile date sunt corecte și returneaza 200 sau 400 dacă nu a fost efectuat cu succes
+POST - inserează o entitate dacă toate detaliile date sunt corecte și returneaza  200 sau 400 dacă nu a fost efectuat cu succes
 
 PUT - actualizează o entitate dacă toate detaliile date sunt corecte și returneaza 200 sau 400 dacă nu a fost efectuat cu succes
 
 DELETE - șterge o entitate dacă toate detaliile date sunt corecte și returneaza 200 sau 400 dacă nu a fost efectuat cu succes
 
-flow
 
-DATABASE DIAGRAM
+![flow](https://user-images.githubusercontent.com/72413699/168095340-433a1194-a71d-4502-bbbf-3b5cb6303656.jpg)
 
-DB
 
-PROJECT DIAGRAM
+DATABASE DIAGRAM 
 
-proj
+![DB](https://user-images.githubusercontent.com/72413699/168095497-b7daa14b-340a-40b5-b11c-b49a3b1aad4f.png)
+
+
+PROJECT DIAGRAM 
+
+![proj](https://user-images.githubusercontent.com/72413699/168095559-876e3156-2a20-4ce0-b1db-b035ddfe043b.png)
